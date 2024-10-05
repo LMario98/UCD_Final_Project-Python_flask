@@ -1,0 +1,9 @@
+<h1>Thank You!</h1>
+<p>Your submission has been received.</p>
+
+<h2>Previous Submissions:</h2>
+<ul>
+  {% for submission in submissions %}
+    <li><strong>{{ submission.name }}:</strong> {{ submission.message }}</li>
+  {% endfor %}
+</ul>
