@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for # type: ignore
 
 app = Flask(__name__)
 
@@ -38,7 +38,7 @@ def delete_task(task_id):
         del tasks[task_id]
     return redirect(url_for('home'))
 
-@app.route('/Projects')
+@app.route('/projects')
 def projects():
     # return "<h1>Projects</h1><p>Here are some of my projects.</p>"
     return render_template('projects.html')

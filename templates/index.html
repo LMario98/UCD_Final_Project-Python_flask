@@ -15,7 +15,7 @@
     </header>
     <nav>
         <a href="/">Home</a>
-        <a href="/templates/projects.html">Projects</a>
+        <a href="/projects">Projects</a>
         <a href="/skills">Skills</a>
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
@@ -27,8 +27,13 @@
     <br>
     <hr>
 
+    <!-- action="{{ url_for('add_task') }}" -->
+
+
+
+
     <h2>Add a new activity</h2>
-    <form action="{{ url_for('add_task') }}" method="POST">
+    <form>
         <label for="title">Title:</label>
         <input type="text" name="title" id="title" required>
         <br>
